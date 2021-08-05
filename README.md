@@ -13,3 +13,7 @@ The class can be intantitiated by simply providing following parameters:
 3. `target` - The name of target column of the data frame.
 4. `lam` - The Laplace Smoothing parameter, by default it is 0.
 
+The instantition wil be done as follows: `customNB = NaiveBayesPosterior(df, features, target, lam)`.
+
+### Prior Calculation
+The prior can be calculated by using `customNB.calculate_prior()` where *customNB* is the name of the instantiated object. The value of prior can be accessed using `customNB.prior`.
