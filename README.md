@@ -17,3 +17,6 @@ The instantition wil be done as follows: `customNB = NaiveBayesPosterior(df, fea
 
 ### Prior Calculation
 The prior can be calculated by using `customNB.calculate_prior()` where *customNB* is the name of the instantiated object. The value of prior can be accessed using `customNB.prior`.
+
+### Likelihood Calculation
+The prior can be calculated by using `customNB.calculate_likelihood()` where *customNB* is the name of the instantiated object. The value of prior can be accessed using `customNB.likelihood`.
