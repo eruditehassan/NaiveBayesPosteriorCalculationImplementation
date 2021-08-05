@@ -33,3 +33,12 @@ The posterior calculation function takes input of a nested list of the following
 
 where `weather` is the column name and `Sunny` is the value.
 
+
+**Method 2** 
+
+Directly calculate the posterior by using `customNB.complete_calculation(values)` where *customNB* is the name of the instantiated object, and **values** are the values for which posterior is to calculated.
+
+The posterior calculation function takes input of a nested list of the following format
+`values = [['weather','Sunny'],['temperature','Hot'], 'Yes']`
+
+where `weather` is the column name and `Sunny` is the value.
