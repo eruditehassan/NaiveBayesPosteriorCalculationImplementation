@@ -20,3 +20,16 @@ The prior can be calculated by using `customNB.calculate_prior()` where *customN
 
 ### Likelihood Calculation
 The prior can be calculated by using `customNB.calculate_likelihood()` where *customNB* is the name of the instantiated object. The value of prior can be accessed using `customNB.likelihood`.
+
+### Posterior Calculation
+There are two ways to calculate posterior.
+
+**Method 1** 
+
+First calculate `prior` and `likelihood` using functions mentioned above and once that is done you can use `customNB.calculate_posterior(values)` where *customNB* is the name of the instantiated object, and **values** are the values for which posterior is to calculated.
+
+The posterior calculation function takes input of a nested list of the following format
+`values = [['weather','Sunny'],['temperature','Hot'], 'Yes']`
+
+where `weather` is the column name and `Sunny` is the value.
+
